@@ -1,0 +1,51 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px;
+    align-items: center;
+    width: 90%;
+    margin: auto auto;
+    
+}
+
+.inpt_1{
+    height: 120px;
+    width: 75%;
+    font-size: 2rem;
+    padding-left: 5%;
+   /* margin-left: 10%;
+   
+    
+   /* padding: 0 45pc 50px 50px;
+
+    /*float: left; Para juntar ao que vem a seguir*/ 
+    
+
+}
+.btn_1{
+    
+    background-color:green;
+    width: 15%;
+    height: 126px;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    border:none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /*padding: 0 60px 50px 0;
+    /*margin-left:none;*/
+    
+    
+    
+    
+    /*order-left: none;*/
+    
+   
+}
+
