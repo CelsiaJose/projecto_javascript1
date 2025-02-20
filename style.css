@@ -4,20 +4,20 @@ body{
 }
 
 header{
-    display: flex;
+    display:flex;
     flex-flow: row wrap;
-    border: 1px;
+    /*border: 1px solid goldenrod;*/
     align-items: center;
-    width: 90%;
-    margin: auto auto;
-    
+    width: 80%;
+    margin:auto auto;
 }
 
 .inpt_1{
-    height: 120px;
-    width: 75%;
+    height: 60px;
+    width: 74%;
     font-size: 2rem;
-    padding-left: 5%;
+    padding-left: 10%;
+    border: 1px solid rgb(22, 17, 5)
    /* margin-left: 10%;
    
     
@@ -31,7 +31,7 @@ header{
     
     background-color:green;
     width: 15%;
-    height: 126px;
+    height: 64px;
     cursor: pointer;
     color: white;
     font-weight: bolder;
@@ -44,8 +44,78 @@ header{
     
     
     
-    /*order-left: none;*/
-    
-   
+    /*order-left: none;*/   
 }
 
+main{
+    display: flex;
+    flex-flow: row wrap;
+    /*border: 1px solid hsl(0, 95%, 49%);*/
+    width: 80%;
+    margin: auto auto;
+    padding-top: 40px;
+}
+.itens{
+    display: flex;
+    flex-flow: row wrap;
+    /*border: 1px solid hsl(0, 95%, 49%);*/
+    justify-items: center;
+    align-items: center;
+    height:65px;
+    width: 100%;
+    box-shadow: 0 0 20px rgb(168, 165, 165);
+    margin-bottom: 2%;
+    
+}
+.item_icone{
+     flex:5%;
+    /*border: 1px solid rgb(43, 255, 0);*/
+    text-align: center;
+    font-size: 2rem; /*Altera até tamanho das imagens e ícones*/
+  
+
+}
+.item_nome{
+   flex:45%;
+   /*border: 1px solid rgb(76, 0, 255);*/
+   font-family: 20px;
+   font-weight: bold;   
+
+}
+.item_botao{
+    flex:5%;
+   /*border: 1px solid rgb(0, 225, 255);*/
+}
+.delete{
+    background:red;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 65px;
+    width: 100%;
+}
+.itens_clicado{
+    display: flex;
+    flex-flow: row wrap;
+    /*border: 1px solid hsl(0, 95%, 49%);*/
+    justify-items: center;
+    align-items: center;
+    height:65px;
+    width: 100%;
+    box-shadow: 0 0 20px rgb(168, 165, 165);
+}
+.mdi-checkbox-marked-circle{
+    color:green 
+}
+/*Quando estiver as duas classes item e  clicado 
+OBS :Se temos uma página com a clase por exemplo item cliado na classe fica .item.cliado */
+.itens_clicado{
+background: rgb(221, 245, 221);
+
+}
+/**Quando for o item cliado o nome acontece algo*/
+.itens_clicado .item_nome{
+    text-decoration:line-through;
+    color: gray;
+    
+    }

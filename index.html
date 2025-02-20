@@ -6,23 +6,39 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
 </head>
 <body>
     <h1 style="text-align: center;">Lista de Tarefas</h1><br><br>
     <header>
-        <input id="inptTarefa" class="inpt_1 espaco" placeholder="Digite a tarefa">
-        <button onclick="alertaHello()" class="btn_1">Adicionar</button>
+        <input id="inptTarefa" class="inpt_1" placeholder="Digite a tarefa">
+        <button id="btn_1add" onclick="addlista()" class="btn_1">Adicionar</button>
     </header>
     <main id="areaLista">
-        <div id="itensPrincipais">
-
+        <div class="itens">
+            <div class="item_icone">
+                <i class="mdi mdi-checkbox-blank-circle-outline"></i>
+            </div>
+            
+            <div id="tarefa" class="item_nome">Teste de tarefa</div>
+            <div class="item_botao">
+                <button class="delete">
+                <i class="mdi mdi-delete">Deletar</i></button>
+            </div>
+            
         </div>
-
-
-
-
-
-
+        <div class="itens_clicado">
+            <div class="item_icone">
+                <i class="mdi mdi-checkbox-marked-circle"></i>
+            </div>
+            
+            <div class="item_nome">Teste de tarefa</div>
+            <div class="item_botao">
+                <button class="delete">
+                <i class="mdi mdi-delete">Deletar</i></button>
+            </div>
+            
+        </div>
 
     </main>
 
