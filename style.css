@@ -65,6 +65,7 @@ main{
     width: 100%;
     box-shadow: 0 0 20px rgb(168, 165, 165);
     margin-bottom: 2%;
+    cursor: pointer;
     
 }
 .item_icone{
@@ -93,6 +94,7 @@ main{
     padding: 10px;
     height: 65px;
     width: 100%;
+    cursor: pointer;
 }
 .itens_clicado{
     display: flex;
@@ -103,16 +105,16 @@ main{
     height:65px;
     width: 100%;
     box-shadow: 0 0 20px rgb(168, 165, 165);
+    background: rgb(221, 245, 221);
+    
 }
 .mdi-checkbox-marked-circle{
-    color:green 
+    color:green ;
+    
 }
 /*Quando estiver as duas classes item e  clicado 
 OBS :Se temos uma página com a clase por exemplo item cliado na classe fica .item.cliado */
-.itens_clicado{
-background: rgb(221, 245, 221);
 
-}
 /**Quando for o item cliado o nome acontece algo*/
 .itens_clicado .item_nome{
     text-decoration:line-through;
